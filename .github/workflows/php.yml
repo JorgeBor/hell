@@ -23,4 +23,6 @@ jobs:
       with:
         bootstrap: vendor/autoload.php
         configuration: phpunit.xml
+        #shows an itemized list of tests run
+        args: --testdox
 
