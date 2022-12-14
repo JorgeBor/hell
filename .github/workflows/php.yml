@@ -3,14 +3,19 @@ name: PHPUnitWorkflow
 on: [push]
 
 jobs:
-  build-test:
+  #name of this job.
+  build:
+    #OS of the VM that will be used to run the test
     runs-on: ubuntu-latest
 
     steps:
+      #checks out the code
     - uses: actions/checkout@v3
     
+      #used to leverage composer CLI
     - uses: php-actions/composer@v6
 
+      #run phpunit
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
       with:
