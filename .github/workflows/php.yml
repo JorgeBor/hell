@@ -1,7 +1,6 @@
 name: PHPUnitWorkflow
 
-on:
-  push: [push]
+on: [push]
 
 jobs:
   build-test:
@@ -14,8 +13,7 @@ jobs:
 
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
-      env:
-        TEST_NAME: Scarlett
       with:
         bootstrap: vendor/autoload.php
         configuration: phpunit.xml
+
