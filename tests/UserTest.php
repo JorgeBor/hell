@@ -9,7 +9,7 @@ final class UserTest extends TestCase
     {
         $user = new User(18, 'John');
 
-        $this->assertSame('John', $user->name);
+        $this->assertSame('Ken', $user->name);
         $this->assertSame(18, $user->age);
         $this->assertEmpty($user->favorite_movies);
     }
