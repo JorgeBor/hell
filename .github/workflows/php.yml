@@ -3,7 +3,7 @@ name: PHPUnitWorkflow
 on: [push]
 
 jobs:
-  #name of this job. You see it on the actions page in Github
+  #ID of this job. You see it on the actions page in Github and uses it for referencing in other jobs
   PHPUnit-Run:
     #OS of the VM that will be used to run the test
     runs-on: ubuntu-latest
